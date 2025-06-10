@@ -27,6 +27,17 @@ Whether you're building a chatbot, coding assistant, or research tool, Foundatio
 
 ## Installation
 
+### run prebuild binry only on macOS 260:
+
+Download version 1.0 [Download Link](https://github.com/sinLuke/FundationModelsProxy/releases/download/1.0/FundationModelsProxy)
+
+```bash
+sudo chmod 777 ~/Downloads/FoundationModelsProxy
+HOST_NAME=127.0.0.1 PORT=8080 ~/Downloads/FoundationModelsProxy
+```
+
+### Build your self
+
 1. **Clone the repository**
 
    ```bash
