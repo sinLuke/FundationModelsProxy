@@ -4,7 +4,7 @@ Here's a completed and polished `README.md` for your project, based on your desc
 
 # FoundationModelsProxy
 
-![](image0.png)
+![](image0.webp)
 
 ## Overview
 
@@ -14,7 +14,7 @@ Whether you're building a chatbot, coding assistant, or research tool, Foundatio
 
 ## Features
 
-* ✅ **OpenAI-Compatible API**: Supports `/v1/chat/completions` and related endpoints.
+* ✅ **OpenAI-Compatible API**: Supports `/chat/completions` and related endpoints.
 * 🔒 **Runs Fully Offline**: No internet connection required; your data stays local.
 * 🍎 **macOS Native**: Built specifically for macOS 26+ with native performance.
 * 🛠 **Toolchain-Friendly**: Works with OpenAI clients (e.g., `openai.ChatCompletion`), `curl`, and other OpenAI-compatible libraries.
@@ -27,14 +27,17 @@ Whether you're building a chatbot, coding assistant, or research tool, Foundatio
 
 ## Installation
 
-### run prebuild binry only on macOS 260:
+### run prebuild binry only on macOS 26.0:
 
-Download version 1.0 [Download Link](https://github.com/sinLuke/FundationModelsProxy/releases/download/1.0/FundationModelsProxy)
+Download Prebuild Binry v1.0 [Download Link](https://github.com/sinLuke/FundationModelsProxy/releases/download/1.0/FundationModelsProxy)
 
 ```bash
 sudo chmod 777 ~/Downloads/FoundationModelsProxy
 HOST_NAME=127.0.0.1 PORT=8080 ~/Downloads/FoundationModelsProxy
 ```
+
+If macOS alert you that the executable may contains malware and asking for moving it to Trash. Go to the system setting and select "Open Anyway"
+![](image1.webp)
 
 ### Build your self
 
@@ -79,13 +82,15 @@ print()  # New line after streaming completes
 
 ### Other OpenAI Competable Clients (Like Msty)
 
-Hostname: "localhost:8080"
-Key: "Any Placeholder Key"
-Model: "default"
+| Setting    | Value |
+| -------- | ------- |
+| Hostname  | `localhost:8080`    |
+| API Key | `Any Placeholder Key`   |
+| Model    | `default`   |
 
 ## Roadmap
 
-* [✅] Support stream mode
+* [x] Support stream mode
 * [ ] Add support for structure output
 * [ ] Add support for tool use
 
